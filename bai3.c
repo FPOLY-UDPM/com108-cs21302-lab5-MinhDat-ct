@@ -13,11 +13,22 @@
 #include <stdio.h>
 
 //Tạo hàm 
+void swap(int *a, int*b){
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
 
 int main() {
+    int a, b;
+    printf("Nhap vao gia tri a: ");
+    scanf("%d", &a);
+    printf("Nhap vao gia tri b: ");
+    scanf("%d", &b);
+    swap(&a, &b);
+    printf("Gia tri sau khi hoan vi: a = %d, b = %d\n", a, b);
 
-    // //Gọi hàm trong hàm main 
-    
     return 0;
 }
 
