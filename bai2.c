@@ -11,13 +11,15 @@
 //  chia hết cho 100 
  
 #include <stdio.h>
-
-//Tạo hàm 
-
 int main() {
-
-    // //Gọi hàm trong hàm main 
-    
+int nam;
+printf("Nhap vao nam: ");
+scanf("%d", &nam);
+if((nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0)) {
+    printf("%d la nam nhuan.\n", nam);
+} else {
+    printf("%d khong phai la nam nhuan.\n", nam);
+}
     return 0;
 }
 
